@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign Up</title>
+<style>
+body {
+    background-image: url("images/cutefd.jpg");
+    background-position: center top;
+    background-size: 100% auto;
+}
+/*number textbox formatting */ 
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+ul.nav_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li.nav_li {
+    float: left;
+}
+
+li.nav_li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.nav_li a:hover {
+    background-color: #111;
+}
+</style>
+</head>
+<body>
+<h1 align="center" style="color:"> Foodzilla </h1>
+<div class="nav">
+<ul class="nav_list">
+  <li class="nav_li"><a href="login.jsp">Home</a></li>
+  <li class="nav_li"><a href="contact.html">Contact</a></li>
+  <li class="nav_li"><a href="about.html">About</a></li>
+</ul>
+</div>
+<h2>  Sign up form  </h2>
+<div  align="left">
+<form name="SignupForm1" action="signup.jsp" method="post" accept-charset="utf-8">  
+    <table style="">
+        <tr><td><label for="fname">First Name</label></td>  
+       <td> <input type="text" name="fname"  required></td>
+        </tr> 
+        <tr></tr>
+        <tr><td><label for="lname">Last Name</label> </td> 
+        <td> <input type="text" name="lname" required> </td> 
+        </tr> 
+        <tr></tr> 
+        <tr>
+        <td><label for="umail">Email</label></td>  
+        <td><input type="email" name="umail" placeholder="mailid@email.com" required></td>  
+        </tr> 
+        <tr></tr> 
+        <tr>
+        <td><label for="password">Password</label> </td> 
+        <td> <input type="password" name="password" pattern=".{6,}" required title="6 characters minimum"></td>
+        <td> (*password must be at least 6 characters long)</td>
+        </tr>  
+        <tr></tr>
+        <tr>
+        <td><label for="address">Apartment,Street</label>  
+        <td><input type="text" name="address" required></td>
+        </tr>  
+        <tr></tr>
+        <tr>
+        <td><label for="city">City</label>  
+        <td><input type="text" name="city" required></td>
+        </tr> 
+        <tr></tr>
+        <tr>
+        <td><label for="state">State</label>  
+        <td><input type="text" name="state" required></td>
+        </tr> 
+        <tr></tr>
+        <tr>
+        <td><label for="zipcode">ZipCode</label>  
+        <td><input type="number" name="zipcode" required></td>
+        </tr> 
+        <tr></tr>
+        <tr>
+        <td><label for="phone">Phone</label> 
+        <td><input type="number" name="phone" required></td>  
+        </tr>  
+        <tr></tr>
+        <tr> 
+        <td><input type="submit" value="Sign Up">
+        <input type="reset" value="Reset">
+        </td> 
+        </tr>        
+    </table>
+    <br>
+</form>  
+</div>
+</body>
+</html>
